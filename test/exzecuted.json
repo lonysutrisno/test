@@ -1,0 +1,1002 @@
+[
+	{
+		"purchase_request_id" : 94627728,
+		"user_id" : 207568,
+		"kw_user_id" : 102373053,
+		"amount" : 41824.1,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 96890892,
+		"user_id" : 255999,
+		"kw_user_id" : 102878553,
+		"amount" : 5500,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 89341986,
+		"user_id" : 202334,
+		"kw_user_id" : 102355527,
+		"amount" : 14619.13,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627866,
+		"user_id" : 217278,
+		"kw_user_id" : 102567977,
+		"amount" : 498860,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94386156,
+		"user_id" : 227948,
+		"kw_user_id" : 102642545,
+		"amount" : 20500,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 111662905,
+		"user_id" : 115343,
+		"kw_user_id" : 101872957,
+		"amount" : 3552,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 89753604,
+		"user_id" : 204940,
+		"kw_user_id" : 102365436,
+		"amount" : 1000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 89443362,
+		"user_id" : 202617,
+		"kw_user_id" : 102356590,
+		"amount" : 14669.38,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 115611409,
+		"user_id" : 239430,
+		"kw_user_id" : 102732292,
+		"amount" : 3723.53,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627966,
+		"user_id" : 232911,
+		"kw_user_id" : 102662950,
+		"amount" : 53946,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627716,
+		"user_id" : 231189,
+		"kw_user_id" : 102659538,
+		"amount" : 44054,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 96901760,
+		"user_id" : 261308,
+		"kw_user_id" : 102901623,
+		"amount" : 3400,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 88090894,
+		"user_id" : 159390,
+		"kw_user_id" : 102086931,
+		"amount" : 50000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627700,
+		"user_id" : 231585,
+		"kw_user_id" : 102660387,
+		"amount" : 107100,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94386556,
+		"user_id" : 232517,
+		"kw_user_id" : 102662199,
+		"amount" : 4273,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 127617611,
+		"user_id" : 322806,
+		"kw_user_id" : 104886048,
+		"amount" : 15581.73,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 100452008,
+		"user_id" : 290170,
+		"kw_user_id" : 103498406,
+		"amount" : 22800,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 91901060,
+		"user_id" : 215858,
+		"kw_user_id" : 102554423,
+		"amount" : 2400,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627792,
+		"user_id" : 243887,
+		"kw_user_id" : 102787476,
+		"amount" : 71262,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94385598,
+		"user_id" : 225809,
+		"kw_user_id" : 102617855,
+		"amount" : 3885.42,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 90645930,
+		"user_id" : 209069,
+		"kw_user_id" : 102426432,
+		"amount" : 28909,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627860,
+		"user_id" : 217966,
+		"kw_user_id" : 102599267,
+		"amount" : 299000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 88091574,
+		"user_id" : 156277,
+		"kw_user_id" : 102070887,
+		"amount" : 37650,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 109348475,
+		"user_id" : 1517,
+		"kw_user_id" : 1348638,
+		"amount" : 33900,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 84199428,
+		"user_id" : 159223,
+		"kw_user_id" : 102086568,
+		"amount" : 3544,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 88090350,
+		"user_id" : 161836,
+		"kw_user_id" : 102091704,
+		"amount" : 16165,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94389090,
+		"user_id" : 208832,
+		"kw_user_id" : 102425889,
+		"amount" : 12000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 88531276,
+		"user_id" : 196057,
+		"kw_user_id" : 102336227,
+		"amount" : 88074,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 88484864,
+		"user_id" : 194366,
+		"kw_user_id" : 102332953,
+		"amount" : 88074,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 88410098,
+		"user_id" : 192466,
+		"kw_user_id" : 102329481,
+		"amount" : 440370,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627850,
+		"user_id" : 217796,
+		"kw_user_id" : 102578817,
+		"amount" : 499957,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 88248892,
+		"user_id" : 192433,
+		"kw_user_id" : 102329422,
+		"amount" : 117913.04,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94647604,
+		"user_id" : 225378,
+		"kw_user_id" : 102617054,
+		"amount" : 199800,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94647644,
+		"user_id" : 230537,
+		"kw_user_id" : 102658221,
+		"amount" : 200000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 89493706,
+		"user_id" : 187937,
+		"kw_user_id" : 102321124,
+		"amount" : 443.22,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 91968784,
+		"user_id" : 175795,
+		"kw_user_id" : 102183136,
+		"amount" : 288605,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 113370621,
+		"user_id" : 180743,
+		"kw_user_id" : 102284943,
+		"amount" : 32000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 88093998,
+		"user_id" : 138663,
+		"kw_user_id" : 101971190,
+		"amount" : 52249,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627712,
+		"user_id" : 231150,
+		"kw_user_id" : 102659470,
+		"amount" : 39346,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 88508926,
+		"user_id" : 195290,
+		"kw_user_id" : 102334684,
+		"amount" : 88076.28,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94634314,
+		"user_id" : 231079,
+		"kw_user_id" : 102659299,
+		"amount" : 150000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94522130,
+		"user_id" : 254513,
+		"kw_user_id" : 102875456,
+		"amount" : 4502.24,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94628072,
+		"user_id" : 216990,
+		"kw_user_id" : 102567285,
+		"amount" : 500000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 114545999,
+		"user_id" : 226922,
+		"kw_user_id" : 102620112,
+		"amount" : 2000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627694,
+		"user_id" : 171583,
+		"kw_user_id" : 756264,
+		"amount" : 62100,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 114328235,
+		"user_id" : 187937,
+		"kw_user_id" : 102321124,
+		"amount" : 146.91,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627686,
+		"user_id" : 234554,
+		"kw_user_id" : 102667933,
+		"amount" : 99203,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94628018,
+		"user_id" : 217993,
+		"kw_user_id" : 102599312,
+		"amount" : 298000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94628046,
+		"user_id" : 220551,
+		"kw_user_id" : 102606373,
+		"amount" : 295000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 91972214,
+		"user_id" : 189216,
+		"kw_user_id" : 102323642,
+		"amount" : 500000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627740,
+		"user_id" : 221701,
+		"kw_user_id" : 102609690,
+		"amount" : 16871,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627974,
+		"user_id" : 233087,
+		"kw_user_id" : 102663559,
+		"amount" : 52450,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627824,
+		"user_id" : 240195,
+		"kw_user_id" : 102735847,
+		"amount" : 42160,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 96377924,
+		"user_id" : 272174,
+		"kw_user_id" : 103108192,
+		"amount" : 12201.19,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627656,
+		"user_id" : 224739,
+		"kw_user_id" : 102615322,
+		"amount" : 95940,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94628048,
+		"user_id" : 220735,
+		"kw_user_id" : 102606830,
+		"amount" : 494000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 92458352,
+		"user_id" : 219483,
+		"kw_user_id" : 102602964,
+		"amount" : 2398.59,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94647628,
+		"user_id" : 212171,
+		"kw_user_id" : 102543623,
+		"amount" : 110300,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94628008,
+		"user_id" : 206552,
+		"kw_user_id" : 102370347,
+		"amount" : 300000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94628044,
+		"user_id" : 217678,
+		"kw_user_id" : 102578715,
+		"amount" : 270000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94628006,
+		"user_id" : 161943,
+		"kw_user_id" : 102091905,
+		"amount" : 273399,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 117463969,
+		"user_id" : 253331,
+		"kw_user_id" : 102869773,
+		"amount" : 20000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 84379188,
+		"user_id" : 155316,
+		"kw_user_id" : 102059193,
+		"amount" : 1287.1,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94628094,
+		"user_id" : 208568,
+		"kw_user_id" : 102425320,
+		"amount" : 340000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 91973962,
+		"user_id" : 205185,
+		"kw_user_id" : 102366310,
+		"amount" : 2549,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94647632,
+		"user_id" : 229218,
+		"kw_user_id" : 102655416,
+		"amount" : 199551,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 89493896,
+		"user_id" : 187937,
+		"kw_user_id" : 102321124,
+		"amount" : 443.22,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 88027636,
+		"user_id" : 190282,
+		"kw_user_id" : 102325325,
+		"amount" : 14739.13,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 88092864,
+		"user_id" : 151451,
+		"kw_user_id" : 102031411,
+		"amount" : 20225,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94634734,
+		"user_id" : 236740,
+		"kw_user_id" : 102723196,
+		"amount" : 995740,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 95515682,
+		"user_id" : 205708,
+		"kw_user_id" : 102368298,
+		"amount" : 2888,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627804,
+		"user_id" : 224690,
+		"kw_user_id" : 102615760,
+		"amount" : 52000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94647642,
+		"user_id" : 213158,
+		"kw_user_id" : 102546238,
+		"amount" : 147109,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 90645868,
+		"user_id" : 209069,
+		"kw_user_id" : 102426432,
+		"amount" : 14454.5,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 88450608,
+		"user_id" : 194430,
+		"kw_user_id" : 102333052,
+		"amount" : 14679,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 118288787,
+		"user_id" : 266133,
+		"kw_user_id" : 103005202,
+		"amount" : 2879.44,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 88532630,
+		"user_id" : 195879,
+		"kw_user_id" : 102335875,
+		"amount" : 88074,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 88436172,
+		"user_id" : 192417,
+		"kw_user_id" : 102329384,
+		"amount" : 88074,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 127028743,
+		"user_id" : 316961,
+		"kw_user_id" : 104516619,
+		"amount" : 15684.13,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 113771551,
+		"user_id" : 138497,
+		"kw_user_id" : 101184136,
+		"amount" : 27744.42,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 92220716,
+		"user_id" : 198566,
+		"kw_user_id" : 102346279,
+		"amount" : 39316,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 88089264,
+		"user_id" : 172069,
+		"kw_user_id" : 102173445,
+		"amount" : 143249,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627842,
+		"user_id" : 213061,
+		"kw_user_id" : 102545979,
+		"amount" : 300000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 124910505,
+		"user_id" : 312810,
+		"kw_user_id" : 104247647,
+		"amount" : 46827.75,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94388002,
+		"user_id" : 241149,
+		"kw_user_id" : 102736991,
+		"amount" : 2709,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627876,
+		"user_id" : 221038,
+		"kw_user_id" : 102607723,
+		"amount" : 300000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 113517661,
+		"user_id" : 182026,
+		"kw_user_id" : 102288193,
+		"amount" : 2100,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94633022,
+		"user_id" : 230931,
+		"kw_user_id" : 102658985,
+		"amount" : 145000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 89023342,
+		"user_id" : 187815,
+		"kw_user_id" : 102320883,
+		"amount" : 63372.8,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 88250202,
+		"user_id" : 192366,
+		"kw_user_id" : 102329294,
+		"amount" : 88074,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627838,
+		"user_id" : 210161,
+		"kw_user_id" : 102429168,
+		"amount" : 494000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 88410232,
+		"user_id" : 192466,
+		"kw_user_id" : 102329481,
+		"amount" : 440370,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627994,
+		"user_id" : 209785,
+		"kw_user_id" : 102428200,
+		"amount" : 299000,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 88253998,
+		"user_id" : 192379,
+		"kw_user_id" : 102329316,
+		"amount" : 44037,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 99772250,
+		"user_id" : 288414,
+		"kw_user_id" : 103488311,
+		"amount" : 3329.5,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 114676437,
+		"user_id" : 227988,
+		"kw_user_id" : 102642644,
+		"amount" : 2400,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 88490106,
+		"user_id" : 195285,
+		"kw_user_id" : 102334670,
+		"amount" : 88076.28,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 91970826,
+		"user_id" : 205203,
+		"kw_user_id" : 102366360,
+		"amount" : 5550,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 94627818,
+		"user_id" : 207793,
+		"kw_user_id" : 102423584,
+		"amount" : 29792.5,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	},
+	{
+		"purchase_request_id" : 92560542,
+		"user_id" : 182151,
+		"kw_user_id" : 4087588,
+		"amount" : 29716.76,
+		"description" : "Negative Balance Adjustment",
+		"category_id" : 60,
+		"is_card_blocked" : false,
+		"created_by" : "negative-balance-adjustment-20221219"
+	}
+]

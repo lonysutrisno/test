@@ -1,0 +1,351 @@
+package main
+
+import (
+	"bytes"
+	"database/sql"
+	"database/sql/driver"
+	"errors"
+	"strconv"
+
+	_ "github.com/lib/pq"
+	"github.com/rs/xid"
+)
+
+//ro_lony_sutrisno	GLUymSFBgzcELk4V
+//
+//1921
+type Data struct {
+	XID    xid.ID `json:"xid" db:"xid"`
+	Email  string `json:"email,omitemp" db:"email"`
+	Target []byte `json:"target" db:"target"`
+}
+type Flags []byte
+
+// FlagIndex to differentiate with another int like type.
+type FlagIndex int
+
+var ErrOverflow = errors.New("Overflow")
+var ErrInvalidValue = errors.New("Invalid value")
+
+// 10000111
+
+const (
+	_ = iota
+	FlagNeoIsActive
+	FlagActivationStatusWaitingConfirmation
+	FlagActivationStatusSuccess
+	FlagUserTypeRegular
+	FlagUserTypePremiumBss
+	FlagUserTypePremiumMastercard
+	FlagUserTypeKoinWorks
+	FlagUserTypePremiumMastercardNeoRegistration
+	FlagUserTypePremiumMastercardKoinInvoice
+)
+
+// String implement a Stringer.
+func (f Flags) String() string { return f.Format("0", "_", 8) }
+
+// Format will pretty print a base2(binary) format.
+func (f Flags) Format(pad, sep string, n int) (o string) {
+	s := bytes.TrimLeft(f, pad)
+	m := len(s) % n
+	k, r := true, m > 0
+
+	for len(s) > 0 {
+		if r {
+			o += sep
+			if k {
+				o = string(bytes.Repeat([]byte(pad), n-m))
+			}
+		}
+
+		if !k {
+			m = n
+		}
+
+		o += string(s[:m])
+		s = s[m:]
+		k, r = false, true
+	}
+
+	return o
+}
+
+// Valid will check for 0 or 1 byte in each of it's element.
+func (f Flags) Valid() bool {
+	for i := range f {
+		switch f[i] {
+		case '0', '1':
+			continue
+		default:
+			return false
+		}
+	}
+
+	return len(f) > 0
+}
+
+// Is compare with other Flags with exact equal.
+func (f Flags) Is(g Flags) bool {
+	if len(f) != len(g) {
+		f = Flags(bytes.TrimLeft(f, "0"))
+		g = Flags(bytes.TrimLeft(g, "0"))
+	}
+
+	return (len(f) < 1 && len(g) < 1) ||
+		(bytes.Equal(f, g) && g.Valid())
+}
+
+func (f Flags) Has(g Flags) bool {
+	if len(g) > 0 && g[0] == '0' {
+		g = Flags(bytes.TrimLeft(g, "0"))
+	}
+
+	for i := len(g) - 1; i >= 0; i-- {
+		if g[i] != '1' {
+			continue
+		} else if v, _ := f.Get(FlagIndex(len(g) - i)); !v {
+			return false
+		}
+	}
+
+	return len(g) > 0
+}
+
+// Get bit value on the given index, start from 1 instead of 0 (right to left).
+func (f Flags) Get(i FlagIndex) (v bool, err error) {
+	if i < 1 || int(i) > len(f) {
+		return false, ErrOverflow
+	} else if !f.Valid() {
+		return false, ErrInvalidValue
+	}
+
+	bitIndex := len(f) - int(i)
+
+	switch f[bitIndex] {
+	case '1':
+		return true, err
+	default:
+		return false, err
+	}
+}
+
+// Set bit value on the given index, start from 1 instead of 0 (right to left).
+func (f Flags) Set(i FlagIndex, v bool) (g Flags, err error) {
+	if i < 1 {
+		return nil, ErrOverflow
+	} else if !f.Valid() {
+		return nil, ErrInvalidValue
+	}
+
+	s := 0
+	if g = make(Flags, len(f)); len(f) < int(i) {
+		g, s = make(Flags, i), int(i)-len(f)
+		for i := 0; i < s; i++ {
+			g[i] = '0'
+		}
+	}
+
+	copy(g[s:], f)
+
+	bitIndex := len(g) - int(i)
+
+	switch {
+	case v:
+		g[bitIndex] = '1'
+	default:
+		g[bitIndex] = '0'
+	}
+
+	return g, err
+}
+
+// Scan is sql.Scanner implementation.
+func (f *Flags) Scan(src interface{}) (err error) {
+	_ = sql.Scanner(f)
+
+	*f = Flags(nil)
+
+	switch src := src.(type) {
+	case int64:
+		*f = Flags(strconv.FormatUint(uint64(src), 2))
+	case float64:
+		*f = Flags(strconv.FormatUint(uint64(src), 2))
+	case bool:
+		if src {
+			*f = Flags("1")
+		} else {
+			*f = Flags("0")
+		}
+	case []byte:
+		*f = Flags(string(src))
+	case string:
+		*f = Flags(src)
+	}
+
+	if !f.Valid() {
+		return ErrInvalidValue
+	}
+
+	return err
+}
+
+// Value is driver.Valuer implementation.
+func (f Flags) Value() (v driver.Value, err error) {
+	_ = driver.Valuer(f)
+
+	if !f.Valid() {
+		return nil, ErrInvalidValue
+	}
+
+	return string(f), err
+}
+
+type Users struct {
+	Users []User `json:"users"`
+}
+
+// User struct which contains a name
+// a type and a list of social links
+type User struct {
+	UserID     int    `json:"user_id"`
+	KwUserCode string `json:"kw_user_code"`
+	KwUserID   string `json:"kw_user_id"`
+}
+
+func main() {
+
+	// var fl Flags
+	// jsonFile, err := os.Open("user_id.json")
+	// // if we os.Open returns an error then handle it
+	// if err != nil {
+	// 	fmt.Println(err)
+	// }
+
+	// // defer the closing of our jsonFile so that we can parse it later on
+	// defer jsonFile.Close()
+	// host := "db-read1.koinworks.com"
+	// port := "5432"
+	// user := "ro_lony_sutrisno"
+	// password := "GLUymSFBgzcELk4V"
+	// dbname := "asgard"
+	// psqlInfo := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable", host, port, user, password, dbname)
+	// conn, err := sql.Open("postgres", psqlInfo)
+	// if err != nil {
+	// 	log.Fatalf("Tidak Konek DB Errornya : %s", err)
+	// }
+
+	// // sql := fmt.Sprintf(`
+	// // select user_id  from users.users nu where user_code ='BB02672';
+	// // 	`)
+	// // row, err := conn.Query(sql)
+	// // if err != nil {
+	// // 	fmt.Println(err)
+	// // }
+	// // for row.Next() {
+	// // 	err = row.Scan(&fl)
+	// // 	if err != nil {
+	// // 		fmt.Println(err)
+	// // 	}
+
+	// // }
+
+	// byteValue, _ := ioutil.ReadAll(jsonFile)
+
+	// // we initialize our Users array
+	// var users Users
+
+	// json.Unmarshal(byteValue, &users)
+
+	// for i := 0; i < len(users.Users); i++ {
+	// 	fmt.Println(users.Users[i])
+	// 	//query
+
+	// }
+
+	// file, _ := json.MarshalIndent(users, "", " ")
+
+	// _ = ioutil.WriteFile("test.json", file, 0644)
+	// var UserName string = "someusername"
+	// var Password string = "somepassword"
+	// // Authorization: Basic c29tZXVzZXJuYW1lOnNvbWVwYXNzd29yZA==
+	// txt := "Basic c29tZXVzZXJuYW1lOnNvbWVwYXNzd29yZA=="
+	// decodedByte, _ := base64.StdEncoding.DecodeString(txt[6:])
+
+	// var decodedString = string(decodedByte)
+	// fmt.Println(decodedString)
+
+	// if decodedString != UserName+":"+Password {
+	// 	fmt.Println("not allowed")
+	// }
+	// // id := xid.New()
+	// // fmt.Println(id)
+
+	// // host := "pgm-d9jr232e0374ophxvo.pgsql.ap-southeast-5.rds.aliyuncs.com"
+	// // port := "1921"
+	// // user := "ro_lony_sutrisno"
+	// // password := "GLUymSFBgzcELk4V"
+	// // dbname := "koinneo"
+	// // var fl Flags
+
+	// // psqlInfo := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable", host, port, user, password, dbname)
+	// // conn, err := sql.Open("postgres", psqlInfo)
+	// // if err != nil {
+	// // 	log.Fatalf("Tidak Konek DB Errornya : %s", err)
+	// // }
+
+	// // sql := fmt.Sprintf(`
+	// // 	select flags  from koinneo.neo_users nu where kw_user_code ='RC02397';
+	// // 	`)
+	// // row, err := conn.Query(sql)
+	// // if err != nil {
+	// // 	fmt.Println(err)
+	// // }
+	// // for row.Next() {
+	// // 	err = row.Scan(&fl)
+	// // 	if err != nil {
+	// // 		fmt.Println(err)
+	// // 	}
+
+	// // }
+	// // // fmt.Println(temps)
+	// // // var z = "000"
+	// // // for i := 1; i < 359; i++ {
+	// // // 	if i <= 9 {
+	// // // 		fmt.Println(z + strconv.Itoa(i))
+	// // // 	} else if i >= 9 && i <= 99 {
+	// // // 		z = "00"
+	// // // 		fmt.Println(z + strconv.Itoa(i))
+	// // // 	} else {
+	// // // 		z = "0"
+	// // // 		fmt.Println(z + strconv.Itoa(i))
+	// // // 	}
+	// // // }
+	// isActive, _ := Flags("0").Set(FlagNeoIsActive, true)
+	// userTypeMasterCard, _ := Flags("0").Set(FlagUserTypePremiumMastercard, true)
+	// userTypeRegis, _ := Flags("0").Set(FlagUserTypePremiumMastercardNeoRegistration, true)
+	// userTypeKoinInvoice, _ := Flags("0").Set(FlagUserTypePremiumMastercardKoinInvoice, true)
+
+	// if !fl.Has(isActive) || (!fl.Has(userTypeMasterCard) && !fl.Has(userTypeRegis) && !fl.Has(userTypeKoinInvoice)) {
+	// 	fmt.Println(fl.Has(isActive))
+	// 	fmt.Println(fl.Has(userTypeMasterCard))
+	// 	fmt.Println(fl.Has(userTypeRegis))
+	// 	fmt.Println(fl.Has(userTypeKoinInvoice))
+
+	// }
+
+	// if true || (false && false) {
+	// 	fmt.Println("asf")
+	// }
+	// masterCardUserTypeFromLoan, _ := Flags("0").Set(FlagNeoIsActive, true)
+	// masterCardUserTypeFromRegister, _ := Flags("0").Set(FlagUserTypePremiumMastercard, true)
+	// masterCardUserTypeFromKoinInvoice, _ := Flags("0").Set(FlagUserTypePremiumMastercardNeoRegistration, true)
+
+	// if fl.Has(masterCardUserTypeFromLoan) {
+	// 	fmt.Println("loan")
+	// } else if fl.Has(masterCardUserTypeFromRegister) {
+	// 	fmt.Println("neo")
+	// } else if fl.Has(masterCardUserTypeFromKoinInvoice) {
+	// 	fmt.Println("invoice")
+	// }
+}
