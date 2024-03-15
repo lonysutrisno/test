@@ -37,7 +37,7 @@ func LockFeature(
 
 	if err = mutex.LockContext(ctx); err != nil {
 		if errors.Is(err, redsync.ErrFailed) {
-			return ErrCouldNotAcquireLock
+			return errors.New("cannot be empty")
 		}
 
 		return err
