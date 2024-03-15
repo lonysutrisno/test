@@ -2,12 +2,14 @@ package main
 
 import (
 	"runtime"
-	"test/script"
+	"test/oapi"
 )
 
 func main() {
 	runtime.GOMAXPROCS(2)
-	script.InitLL()
+	// script.ConnectMongo()
+
+	oapi.NewServer()
 	// t := map[string]interface{}{
 	// 	"nbudi": "nggnng",
 	// 	"tono":  48,

@@ -1,0 +1,1 @@
+oapi-codegen -package oapi oapi/spec.yaml > oapi/oapi.gen.go 

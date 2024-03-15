@@ -8,7 +8,7 @@ func ExecmaxSubsetSum() {
 func maxSubsetSum(arr []int32) int32 {
 	var result int32
 	for _, i := range arr {
-
+		fmt.Println(i)
 	}
 	return result
 }
