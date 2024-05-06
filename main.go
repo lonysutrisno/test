@@ -1,14 +1,14 @@
 package main
 
 import (
-	"fmt"
 	"runtime"
-	"test/script"
+	"test/other"
 )
 
 func main() {
 	runtime.GOMAXPROCS(2)
-	fmt.Println(script.PlusOne())
+	// fmt.Println(script.PlusOne())
+	other.TimeOutHTTP()
 
 	// oapi.NewServer()
 	// t := map[string]interface{}{
