@@ -8,7 +8,9 @@ import (
 func main() {
 	runtime.GOMAXPROCS(2)
 	// fmt.Println(script.PlusOne())
-	other.TimeOutHTTP()
+	// monitoring.StartMonitoring()
+
+	other.ExampleInterface()
 
 	// oapi.NewServer()
 	// t := map[string]interface{}{
