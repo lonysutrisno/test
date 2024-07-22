@@ -2,7 +2,7 @@ package main
 
 import (
 	"runtime"
-	"test/loadbalance"
+	"test/other"
 )
 
 func main() {
@@ -10,7 +10,7 @@ func main() {
 	// fmt.Println(script.PlusOne())
 	// monitoring.StartMonitoring()
 
-	loadbalance.LoadBalance()
+	other.ExampleInterface()
 
 	// oapi.NewServer()
 	// t := map[string]interface{}{

@@ -10,13 +10,13 @@ func (v Vehicle) Accelerate() string {
 	return (v.Name + " accelerate")
 }
 
-func (v Vehicle) Brake() {
-	fmt.Println(v.Name + " brake")
+func (v Vehicle) Brake() string {
+	return (v.Name + " brake")
 }
 
 type VehicleInterface interface {
 	Accelerate() string
-	Brake()
+	Brake() string
 }
 
 func NewVehicle(name string) VehicleInterface {
@@ -36,9 +36,27 @@ func (v Train) Gotodest(dest string) {
 	fmt.Println(res + " to " + dest)
 }
 
+// becak
+type BecakInterface interface {
+	Brake() string
+}
+type Becak struct {
+	BecakVec BecakInterface
+}
+
+func (v Becak) Ngerem(dest string) {
+	res := v.BecakVec.Brake()
+	fmt.Println(res + " karena " + dest)
+}
+
 func ExampleInterface() {
 	t := Train{
 		TrainVec: NewVehicle("jayabaya"),
 	}
 	t.Gotodest("malang")
+
+	b := Becak{
+		BecakVec: NewVehicle("Becak"),
+	}
+	b.Ngerem("Turunan")
 }

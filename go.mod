@@ -4,14 +4,17 @@ go 1.18
 
 require (
 	github.com/360EntSecGroup-Skylar/excelize v1.4.1
+	github.com/davecgh/go-spew v1.1.1
 	github.com/dchest/captcha v1.0.0
 	github.com/gin-gonic/gin v1.9.1
 	github.com/go-redis/redis v6.15.9+incompatible
 	github.com/go-redsync/redsync/v4 v4.12.1
+	github.com/jmoiron/sqlx v1.4.0
 	github.com/labstack/echo/v4 v4.11.4
-	github.com/lib/pq v1.10.7
+	github.com/lib/pq v1.10.9
 	github.com/mojocn/base64Captcha v1.3.6
 	github.com/oapi-codegen/runtime v1.1.1
+	github.com/sijms/go-ora/v2 v2.8.19
 	go.mongodb.org/mongo-driver v1.14.0
 	golang.org/x/exp v0.0.0-20240707233637-46b078467d37
 )
